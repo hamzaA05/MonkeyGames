@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cstyle.css">
+    <title>MG | Kontakt</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" height="82px" width="auto"></a>
+        <nav>
+          <ul class="nav-links">
+            <form class="search-form" onsubmit="search(); return false;">
+              <input type="text" placeholder="Suchen..." id="searchInput">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <h2>Falls sie ein Spieleentwickler sind, sind wir bereit dazu, ihr Spiel bei uns aufzunehmen. Kontaktieren sie uns mit Hilfe von diesem Formular!</h2>
+        <br>
+        <form action="https://formspree.io/f/mgebrrrk" method="POST">
+      
+          <label for="fname">Vorname</label>
+          <input type="text" id="fname" name="firstname" placeholder="Dein Vorname..">
+      
+          <label for="lname">Nachname</label>
+          <input type="text" id="lname" name="lastname" placeholder="Dein Nachname..">
+      
+          </select>
+      
+          <label for="subject">Nachricht</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+</body>
+</html>

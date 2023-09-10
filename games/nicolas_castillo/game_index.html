@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game</title>
+<link rel="stylesheet" href="../../gamestyle.css">
+<style>
+	#canvas{
+		padding-top: 100px;
+	}
+</style>
+</head>
+<body>
+
+	<header>
+		<a href="../../index.html"><img class="logo" src="../../img/logo.png" alt="logo" height="82px" width="auto"></a>
+		<nav>
+			<ul class="nav-links">
+				<form class="search-form">
+				  <input type="text" placeholder="Suchen..." id="searchInput">
+				  <button type="submit" onclick="search()"><i class="fa fa-search"></i></button>
+				</form>
+				<div id="searchResults"></div>
+			  </ul>
+		</nav>
+	  </header>
+
+	<div>
+		<canvas style="background-color: #748eb1;" width="800px" height="800px" id="canvas" onmousemove="cords(event)"></canvas>
+	</div>
+	<script type="text/javascript" src="game_index.js"></script>
+</body>
+</html>

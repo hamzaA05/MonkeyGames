@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+}
+
+body{
+  background: #748eb1;
+}
+
+canvas {
+  background: #eee;
+  display: block;
+  display: block;
+  height: 300px;
+  width: 600px;
+    margin: 0 auto; /* center the element horizontally */
+}
+
+#canvas {
+  margin-top: 50px;
+}
+
+.btn-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1px;
+}
+
+.body
+{
+  background: #748eb1;
+}

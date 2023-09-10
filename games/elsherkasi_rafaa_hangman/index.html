@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta
+      name="keywords"
+      content="Hangman | Galgenmann | Rafaa EL Sherkasi"
+    />
+    <meta name="author" content="Rafaa El Sherkasi" />
+    <meta
+      name="description"
+      content="Auf meiner Webseite können Sie viele Informationen über mich erfahren."
+    />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../../gamestyle.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="../../index.html"><img class="logo" src="../../img/logo.png" alt="logo" height="82px" width="auto"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../../index.html"><button class="fa fa-home"></button></a></li>
+        </ul>
+      </nav>
+  </header>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Platzhalter</h2>
+        </div>
+
+        <div class="modal-body">
+          <img class="pngregeln" src="./bilder/regeln.png" alt="Regeln" />
+        </div>
+
+        <div class="modal-footer">
+          <h2>Platzhalter</h2>
+        </div>
+      </div>
+    </div>
+    <button id="resetBtn" class="btn btn-info" onClick="reset()">
+      <i class="fa fa-refresh"></i> Reset
+    </button>
+    <button id="myBtn" class="btn btn-info" onClick="openModal()">Regeln</button>
+    <div class="container">
+      <h1 class="text-center">Errate die Programmiersprache:</h1>
+      <div class="text-center">
+        Fehler: <span id="fehler">0</span> of
+        <span id="maxFehler"></span>
+      </div>
+      <div class="text-center">
+        <img id="hangmanPic" src="./bilder/0.png" alt="Bild" />
+        <p id="wordSpotlight">geratene Wort</p>
+        <div id="keyboard" class="keyboard"></div>
+      </div>
+    </div>
+    
+
+    <script src="hangman.js"></script>
+  </body>
+</html>
+xxx

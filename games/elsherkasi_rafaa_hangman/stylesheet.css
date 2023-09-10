@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	font-family: Calibri, Arial, Gill Sans MT, Tahoma, sans-serif;
+}
+
+div {
+	color: #000;
+}
+
+h1 {
+	color: #000;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+}
+
+h2 {
+	color: #000;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+h3 {
+	color: #000;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+body {
+	background-color: #fff;
+	background-repeat: repeat-x;
+	background-size: cover;
+}
+
+.banner-pic {
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	height: auto;
+}
+
+#hangmanPic {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	height: auto;
+}
+
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+}
+
+.modal-content {
+	position: fixed;
+	bottom: 0;
+	background-color: #fefefe;
+	width: 100%;
+}
+
+.modal-header,
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #000;
+	color: #fff;
+}
+
+h2.modal-header {
+	text-align: center;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.close {
+	color: #000;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#myBtn {
+	background-color: #000;
+	border-radius: 42px;
+	border: 1px solid #000;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+#myBtn:active {
+	position: relative;
+	top: 1px;
+}
+
+.pngregeln {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.container {
+	max-width: none;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+#resetBtn {
+	background-color: #f44336;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 24px;
+	margin: 10px;
+	padding: 10px;
+	width: 100px;
+  }
+  
+  #resetBtn:hover {
+	background-color: #d32f2f;
+	cursor: pointer;
+  }
+  
+  #resetBtn:active {
+	background-color: #b71c1c;
+  }
+  
+
+  #wordSpotlight {
+	font-size: 2.5em;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 1%;
+  }
+  
+
+/* Tastatur */
+.keyboard {
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	margin: 0 auto;
+	width: 100%; /* Änderung: Tastatur auf volle Breite setzen */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .keyboard button {
+	background-color: #000;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 32px;
+	margin: 5px; /* Änderung: Kleinerer Abstand zwischen den Tasten */
+	padding: 10px; /* Änderung: Kleinere Tastengröße */
+	width: 50px; /* Änderung: Kleinere Tastenbreite */
+	height: 50px; /* Änderung: Kleinere Tastenhöhe */
+  }
+  
+  .keyboard button:hover {
+	background-color: #333;
+	cursor: pointer;
+  }
+  
+  .keyboard button:active {
+	background-color: #555;
+  }
+  
+  /* Anpassung der Flexbox-Eigenschaften für mehrere Buchstaben pro Zeile */
+  @media screen and (min-width: 600px) { /* Änderung: Nur auf größeren Bildschirmen aktivieren */
+	.keyboard {
+	  flex-wrap: wrap;
+	  max-width: 600px;
+	}
+	
+	.keyboard button {
+	  flex-grow: 1;
+	  width: auto;
+	  margin: 5px;
+	  padding: 15px;
+	  font-size: 24px;
+	}
+  }

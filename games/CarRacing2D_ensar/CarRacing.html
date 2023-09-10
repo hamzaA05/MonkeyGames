@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Car Racing</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../gamestyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+        body {
+            
+        }
+
+        canvas {
+            margin-top: 20px;
+        }
+        #Playagain {
+            display: none;
+            width: auto;
+            height: 20px;
+            background-color: #16C6FF;
+            font-family: Calibri;
+            font-size: 48px;
+            position: absolute;
+            left: 0; 
+            right: 0; 
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #Playbutton {
+            width: 150px;
+            height: 70px;
+            background-color: #16C6FF;
+            font-family: Calibri;
+            font-size: 48px;
+            position: absolute;
+            left: 0; 
+            right: 0; 
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #Helpbutton
+        {
+            display: block;
+            background-color: #16C6FF;
+            border: 2px solid black;
+            font-size: xx-large;
+            font-weight: bolder;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            
+            
+        }
+
+        
+        #GoBackButton
+        {
+            background-color: #f54141fd;
+            font-size: xx-large;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: none;
+            border: none;
+            
+            
+        } 
+
+        img#Anleitungbild
+        {
+            display: none;
+            position: absolute;
+            left: 0; 
+            right: 0; 
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        </style>
+    </head>
+    <body style="overflow: hidden" >
+
+        <header>
+            <a href="../../index.html"><img class="logo" src="../../img/logo.png" alt="logo" height="82px" width="auto"></a>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="../../index.html"><button class="fa fa-home"></button></a></li>
+              </ul>
+            </nav>
+        </header>
+
+
+        <span id="debug"></span>
+        <span id="score"></span>
+        <span id="highscore"></span>
+
+        <img id="Anleitungbild" src="image/Anleitung.png" width="700"/>
+
+        <button id="Playbutton" onclick="Play()" >Play</button>
+        <button id="Helpbutton" onclick="help()" >?</button>
+        <button id="GoBackButton" onclick="GoBack()">X</button>
+        <button id="Playagain" onclick="Playagain()" >Playagain</button>
+
+        <canvas style="background-color: #667d86;;" id="canvas" onmousemove="cords(event)" height="128px" width="auto"></canvas>
+        
+        <script type="text/javascript" src="Spiel.js"></script>
+    </body>
+</html>
